@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+body{
+	display: flex;
+	flex-direction: column;
+	background-color: black;
+	background-image:url(black_paper.png); 
+	color: white;
+	font-family: 'roboto', sans-serif;
+	margin: 0;
+}
+
+/* header */
+
+header{
+    height: 150px;
+    background-color: black;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+#nav{
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#nav a{
+    text-decoration: none;
+    color: white;
+}
+
+#nav a:hover{
+    color: orange;
+}
+/* fin header */
+
+/* carrousel */
+#carrousel{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	height: 420px;
+	width: 100%;
+}
+
+#carrousel img{
+	height: 400px;
+	width: auto;
+	position:absolute;
+}
+/* fin carrousel */
+
+.controls{
+	text-align: center;
+}
+
+.controls button{
+	background: black;
+	color: white;
+	padding: 8px 2px 8px 2px;
+	width:90px;
+	border:none;
+}
+
+/* miniatures */
+#miniatures{
+	display: flex;
+	flex-direction: row;
+	height: auto;
+	width: 100%;
+	margin: 20px;
+}
+
+#miniatures img{
+	justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    width: 14%;
+}
+
+/* fin miniatures */
+
+/*footer*/
+
+footer{
+	height: 120px;
+	margin:0px;
+	padding:0px;
+	width: 100%; 
+	background-color: black;
+	color: white;
+}
+
+.textfooter{
+    color: white;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.textfooter a{
+    text-decoration: none;
+    color: #D34A00;
+}
+
+.textfooter a:hover{
+    color: orange;
+}
+
+#textfooter{
+	margin: 10px;
+	padding: 20px;
+}
+/* fin footer*/
