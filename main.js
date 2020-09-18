@@ -58,7 +58,7 @@ function slideImg(){
 
     slideImg(); // on oublie pas de relancer la fonction à la fin
 
-    }, 7000); // on définit l'intervalle à 7000 millisecondes (7s)
+    }, 6000); // on définit l'intervalle à 6000 millisecondes (6s)
 }
 
 slideImg(); // enfin, on lance la fonction une première fois

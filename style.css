@@ -29,14 +29,6 @@ header{
     margin-right: 20px;
 }
 
-#nav a{
-    text-decoration: none;
-    color: white;
-}
-
-#nav a:hover{
-    color: orange;
-}
 /* fin header */
 
 /* carrousel */
@@ -57,6 +49,7 @@ header{
 
 .controls{
 	text-align: center;
+	margin: 6px;
 }
 
 .controls button{
@@ -70,18 +63,18 @@ header{
 /* miniatures */
 #miniatures{
 	display: flex;
-	flex-direction: row;
+  	flex-direction: row;
+  	flex-wrap: nowrap;
+  	justify-content: center;
+ 	align-items: center;
+ 	align-content: center;
 	height: auto;
 	width: 100%;
-	margin: 20px;
 }
 
 #miniatures img{
-	justify-content: center;
-    justify-items: center;
-    align-items: center;
-    align-content: center;
-    width: 14%;
+    max-width: 12%;
+    margin: 4px;
 }
 
 /* fin miniatures */
@@ -89,12 +82,12 @@ header{
 /*footer*/
 
 footer{
-	height: 120px;
 	margin:0px;
 	padding:0px;
 	width: 100%; 
 	background-color: black;
 	color: white;
+	text-align: center;
 }
 
 .textfooter{
