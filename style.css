@@ -75,6 +75,11 @@ header{
 #miniatures img{
     max-width: 12%;
     margin: 4px;
+    opacity:0.4;
+}
+
+#miniatures img:hover{
+	opacity: 1;
 }
 
 /* fin miniatures */

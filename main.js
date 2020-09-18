@@ -9,8 +9,6 @@ var $carrousel = $('#carrousel'), // on cible le bloc du carrousel
 $img.css('display', 'none'); // on cache les images
 $currentImg.css('display', 'block'); // on affiche seulement l'image courante
 
-// $carrousel.append('<div class="controls"> <span class="prev">Precedent</span> <span class="next">Suivant</span> </div>');
-
 $('.next').click(function(){ // image suivante
 
     i++; // on incrémente le compteur
@@ -23,22 +21,21 @@ $('.next').click(function(){ // image suivante
     else{
         i = indexImg;
     }
-
 });
+
 
 $('.prev').click(function(){ // image précédente
 
     i--; // on décrémente le compteur, puis on réalise la même chose que pour la fonction "suivante"
 
     if( i >= 0 ){
-        $img.css('display', 'none');
-        $currentImg = $img.eq(i);
-        $currentImg.css('display', 'block');
+        $img.css('display', 'none');// on cache les images
+        $currentImg = $img.eq(i);// on définit la nouvelle image
+        $currentImg.css('display', 'block');// puis on l'affiche
     }
     else{
         i = 0;
     }
-
 });
 
 function slideImg(){
@@ -52,18 +49,17 @@ function slideImg(){
     }
 
     $img.css('display', 'none');
-
     $currentImg = $img.eq(i);
     $currentImg.css('display', 'block');
 
     slideImg(); // on oublie pas de relancer la fonction à la fin
 
-    }, 6000); // on définit l'intervalle à 6000 millisecondes (6s)
+    }, 3000); // on définit l'intervalle à 3000 millisecondes (3s)
 }
 
 slideImg(); // enfin, on lance la fonction une première fois
 
-console.log('salut')
+console.log('salut inspecteur gadget !')
 
 });
 
